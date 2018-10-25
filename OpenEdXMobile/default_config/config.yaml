@@ -1,5 +1,20 @@
-API_HOST_URL: 'http://10.0.2.2:8000' # localhost is 10.0.2.2 in Android
-ENVIRONMENT_DISPLAY_NAME: 'Localhost'
-PLATFORM_NAME: 'Your platform name here'
-PLATFORM_DESTINATION_NAME: 'example.com'
+API_HOST_URL: 'https://ptxdemo.me' # localhost is 10.0.2.2 in Android
+ENVIRONMENT_DISPLAY_NAME: ''
+PLATFORM_NAME: 'POSTECHx'
+PLATFORM_DESTINATION_NAME: 'ptxdemo.me'
 FEEDBACK_EMAIL_ADDRESS: 'support@example.com'
+NEW_LOGISTRATION_ENABLED: true
+COURSE_SHARING_ENABLED: true
+DISCUSSIONS_ENABLED: true
+CERTIFICATES_ENABLED: true
+USER_PROFILES_ENABLED: true
+COURSE_VIDEOS_ENABLED: true
+COURSE_DATES_ENABLED: true
+USING_VIDEO_PIPELINE: true
+COURSE_ENROLLMENT:
+  TYPE: 'native'
+  #  WEBVIEW:
+  #    COURSE_SEARCH_URL: 'https://ptxdemo.me/courses'
+  #    COURSE_INFO_URL_TEMPLATE: 'https://ptxdemo.me/courses/{path_id}/about'
+  # SEARCH_BAR_ENABLED: true
+  # SUBJECT_DISCOVERY_ENABLED: false

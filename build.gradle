@@ -13,7 +13,11 @@ buildscript {
     repositories {
         google()
         jcenter()       // This is the default repo
-        mavenCentral()  //  This is the Maven Central repo
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }  //  This is the Maven Central repo
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${GRADLE_PLUGIN_VERSION}"
@@ -77,6 +81,13 @@ subprojects {
         } else if ("com.android.build.gradle.LibraryPlugin".equals(plugin.class.name)) {
             project.android.dexOptions.preDexLibraries = rootProject.ext.preDexLibs
         }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
     }
 }
 

@@ -74,7 +74,7 @@ public class CourseAPI {
 
     @NonNull
     public Call<Page<CourseDetail>> getCourseList(final int page) {
-        return courseService.getCourseList(getUsername(), true, config.getOrganizationCode(), page);
+        return courseService.getCourseList(getUsername(), false, config.getOrganizationCode(), page);
     }
 
     @NonNull
